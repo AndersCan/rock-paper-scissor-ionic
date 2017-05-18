@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "outDir": "bin",
+    "sourceMap": true,
+    "module": "commonjs",
+    "skipLibCheck": true
+  }
+}
