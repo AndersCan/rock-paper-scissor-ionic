@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "strict": true,
+    "noEmitOnError": false,
     "outDir": "bin",
     "sourceMap": true,
     "module": "commonjs",
