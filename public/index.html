@@ -34,10 +34,10 @@
     var state = null
 
     const serverUrl = window.location.origin.indexOf('localhost') === -1 ?
-      'rock-paper-scissor-ionic.herokuapp.com' : 'localhost:5000';
+      'wss://rock-paper-scissor-ionic.herokuapp.com' : 'ws://localhost:5000';
 
     console.log('serverUrl', serverUrl)
-    var client = new Colyseus.Client('ws://' + serverUrl);
+    var client = new Colyseus.Client(serverUrl);
 
     var chatRoom = client.join("chat");
 
@@ -51,6 +51,7 @@
     });
 
     chatRoom.state.listen("messages/:number", "add", function (i, value) {
+      console.log('i: ', i)
       addMessage(value);
     });
 
