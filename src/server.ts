@@ -2,7 +2,6 @@ import * as express from 'express';
 import * as path from 'path';
 import * as http from 'http'
 import * as url from 'url'
-import * as WebSocket from 'ws'
 import { Server } from 'colyseus';
 import { ChatRoom } from './rooms/ChatRoom'
 
